@@ -1,6 +1,6 @@
 from __future__ import division
 
-from random import randint
+from random import random
 
 """ Candidate A has 87% chance of winning in Region 1, 65% chance of winning in Region 2 and 17% chance 
 of winning in Region 3. If he wins at 2 or 3 regions, he will win the elections. Calculate overall chance 
@@ -10,15 +10,15 @@ candidateA = 0
 candidateB = 0
 
 for overall in range(0, 10000):
-	if randint(1, 100) <= 87:
+	if random() <= 0.87:
 		region1 = 1
 	else:
 		region1 = 0
-	if randint(1, 100) <= 65:
+	if random() <= 0.65:
 		region2 = 1
 	else:
 		region2 = 0
-	if randint(1, 100) <= 17:
+	if random() <= 0.17:
 		region3 = 1
 	else:
 		region3 = 0
