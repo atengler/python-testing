@@ -1,4 +1,4 @@
-translator = raw_input("Text you enter will be translated to translatorspeak: ")
+translator = raw_input("Text you enter will be translated to leetspeak: ")
 
 translator = translator.replace("a", "4")
 translator = translator.replace("b", "8")
