@@ -2,7 +2,9 @@ from __future__ import division
 
 from random import randint
 
-""" Candidate A has 87% chance of winning in Region 1, 65% chance of winning in Region 2 and 17% chance of winning in Region 3. If he wins at 2 or 3 regions, he will win the elections. Calculate overall chance of winning of candidate A and candidate B """
+""" Candidate A has 87% chance of winning in Region 1, 65% chance of winning in Region 2 and 17% chance 
+of winning in Region 3. If he wins at 2 or 3 regions, he will win the elections. Calculate overall chance 
+of winning of candidate A and candidate B """
 
 candidateA = 0
 candidateB = 0
