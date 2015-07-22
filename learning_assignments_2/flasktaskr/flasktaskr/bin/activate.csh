@@ -7,7 +7,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/srv/python-testing-github/python-testing/learning_assignments_2/flasktaskr/flasktaskr"
+setenv VIRTUAL_ENV "/srv/python-testing/learning_assignments_2/flasktaskr/flasktaskr"
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"
