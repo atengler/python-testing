@@ -33,7 +33,6 @@
         }
         tbody {
             td {
-                color: $table-color-dark;
                 border-left: 1px solid $table-color-medium;
                 font-size: 12px;
                 font-weight: normal;
@@ -44,7 +43,6 @@
             .alt {
                 td {
                     background: $table-color-medium;
-                    color: $table-color-dark;  
                 }
             }
             tr:last-child {

@@ -1,8 +1,19 @@
 @import "_datagrid.scss";
 @import "_variables.scss";
+@import "_login.scss";
+
+@mixin opacity($opacity) {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity)";
+    filter: alpha(opacity=$opacity);
+    -moz-opacity: ($opacity/100);
+    -khtml-opacity: ($opacity/100);
+    opacity: ($opacity/100);
+}
 
 body {
+    color: $font-color;
     font-family: Verdana, Geneva, sans-serif;
+    font-size: 18px;
     background: url(../img/background.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -21,8 +32,10 @@ h2 {
 h1,
 h2 {
     font-family: "Impact", Charcoal, sans-serif;
-    margin: 0;
+    margin: 0px 0px 10px 0px;
     font-weight: unset;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
 h1 {
@@ -36,9 +49,8 @@ h2 {
 .page {
     margin: 2em auto;
     width: 50em;
-    border: 5px solid #ccc;
     padding: 0.8em;
-    background: white;
+    background-color: rgba(255, 255, 255, .7);
 }
 
 .entries {
@@ -80,13 +92,37 @@ h2 {
     padding: 0.5em;
 }
 
-.button {
-    background-color: #000;
+.btn {
+    @include opacity(80);
     display: inline-block;
     color: #ffffff;
-    font-size: 13px;
+    font-size: 1em;
     padding: 3px 12px;
     margin: 0;
     text-decoration: none;
     position: relative;
+    border: 1px transparent;
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+    cursor: pointer;
+    &:hover {
+        @include opacity(100);
+    }
+}
+
+.btn-normal {
+    background-color: #32A7CA;
+}
+
+.btn-delete {
+    background-color: #FC4848;
+}
+
+.btn-complete {
+    background-color: #43D33D;
+}
+
+#logout {
+    float: right;
+    margin: 0px;
 }

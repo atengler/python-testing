@@ -1,7 +1,7 @@
 {% extends "_base.html" %}
 {% block content %}
 
-<p><a href="/logout">Logout</a></p>
+<p id="logout"><a href="/logout" class="btn btn-normal">Logout</a></p>
 
 <h1>FlaskTaskr</h1>
 
@@ -36,7 +36,7 @@
 				<td>
 					&nbsp;
 					&nbsp;
-					<input class="button" type="submit" value="Save">
+					<input class="btn btn-normal" type="submit" value="Save">
 				</td>
 			</form>
 		</tr>
@@ -62,8 +62,8 @@
 						<td width="100px">{{ task.due_date }}</td>
 						<td width="50px">{{ task.priority }}</td>
 						<td>
-							<a href="{{ url_for('delete_entry', task_id = task.task_id) }}">Delete</a> -
-							<a href="{{ url_for('complete', task_id = task.task_id) }}">Mark as Complete</a>
+							<a href="{{ url_for('delete_entry', task_id = task.task_id) }}" class="btn btn-delete">Delete</a> -
+							<a href="{{ url_for('complete', task_id = task.task_id) }}" class="btn btn-complete">Mark as Complete</a>
 						</td>
 					</tr>
 				{% endfor %}
@@ -93,7 +93,7 @@
 						<td width="100px">{{ task.due_date }}</td>
 						<td width="50px">{{ task.priority }}</td>
 						<td>
-							<a href="{{ url_for('delete_entry', task_id = task.task_id) }}">Delete</a>
+							<a href="{{ url_for('delete_entry', task_id = task.task_id) }}" class="btn btn-delete">Delete</a>
 						</td>
 					</tr>
 				{% endfor %}
