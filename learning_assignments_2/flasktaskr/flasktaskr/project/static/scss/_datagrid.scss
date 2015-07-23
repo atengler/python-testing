@@ -1,0 +1,57 @@
+@import "_variables.scss";
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.datagrid {
+    background: $table-color-light;
+    overflow: hidden;
+    border: 1px solid $table-color-dark;
+    border-radius: 3px;
+    table {
+        border-collapse: collapse;
+        @include border-radius(3px);
+        text-align: left;
+        width: 100%;
+        td, th {
+            padding: 3px 10px;
+        }
+        thead {
+            th {
+                background-color: $table-color-dark;
+                color: $table-color-light;
+                font-size: 15px;
+                font-weight: bold;
+                &:first-child {
+                    border: none;
+                }  
+            }
+        }
+        tbody {
+            td {
+                color: $table-color-dark;
+                border-left: 1px solid $table-color-medium;
+                font-size: 12px;
+                font-weight: normal;
+                &:first-child {
+                    border-left: none;
+                }
+            }
+            .alt {
+                td {
+                    background: $table-color-medium;
+                    color: $table-color-dark;  
+                }
+            }
+            tr:last-child {
+                td {
+                    border-bottom: none;    
+                }
+            }
+        }        
+    } 
+}

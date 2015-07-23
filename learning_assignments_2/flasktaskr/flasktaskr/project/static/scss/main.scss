@@ -1,0 +1,92 @@
+@import "_datagrid.scss";
+@import "_variables.scss";
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    background: url(../img/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+}
+
+a,
+h1,
+h2 {
+    color: $h-color;
+}
+
+h1,
+h2 {
+    font-family: "Impact", Charcoal, sans-serif;
+    margin: 0;
+    font-weight: unset;
+}
+
+h1 {
+    border-bottom: 2px solid #eee;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.page {
+    margin: 2em auto;
+    width: 50em;
+    border: 5px solid #ccc;
+    padding: 0.8em;
+    background: white;
+}
+
+.entries {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        margin: 0.8em 1.2em;
+        h2 {
+            margin-left: -1em;
+        }
+    }   
+}
+
+.add-task {
+    font-size: 0.9em;
+    border-bottom: 1px solid #ccc;
+}
+
+.add-task dl {
+    font-weight: bold;
+}
+
+.metanav {
+    text-align: right;
+    font-size: 0.8em;
+    padding: 0.3em;
+    margin-bottom: 1em;
+    background: #fafafa;
+}
+
+.flash {
+    background: #CEE5F5;
+    padding: 0.5em;
+}
+
+.error {
+    background: #F0D6D6;
+    padding: 0.5em;
+}
+
+.button {
+    background-color: #000;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 3px 12px;
+    margin: 0;
+    text-decoration: none;
+    position: relative;
+}
