@@ -3,24 +3,24 @@
 <h1><center>Welcome to FlaskTaskr</center></h1>
 
 <div id="login">
-	<h3>Log in:</h3>
+  <h3>Log in:</h3>
   <form method="post" action="/">
     <p>
-  		Username: <input type="text" name="username" value="{{request.form.username }}">
-  	</p>
+      Username: <input type="text" name="username" value="{{request.form.username }}">
+    </p>
     <p>
-  		Password: <input type="password" name="password" value="{{request.form.password }}">
-  	</p>
-    	<input type="submit" class="btn btn-normal" value="Login">
+      Password: <input type="password" name="password" value="{{request.form.password }}">
+    </p>
+      <input type="submit" class="btn btn-normal" value="Login">
   </form>
 </div>
 
 <p><i>Use 'admin' for the username and password</i></p>
 
 <script>
-	var page = document.getElementsByClassName("page")[0]
-	page.style.width = "400px";
-	page.style.marginTop = "200px";
+  var page = document.getElementsByClassName("page")[0]
+  page.style.width = "400px";
+  page.style.marginTop = "200px";
 </script>
 
 {% endblock %}

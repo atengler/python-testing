@@ -3,126 +3,135 @@
 @import "_login.scss";
 
 @mixin opacity($opacity) {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity)";
-    filter: alpha(opacity=$opacity);
-    -moz-opacity: ($opacity/100);
-    -khtml-opacity: ($opacity/100);
-    opacity: ($opacity/100);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity)";
+  filter: alpha(opacity=$opacity);
+  -moz-opacity: ($opacity/100);
+  -khtml-opacity: ($opacity/100);
+  opacity: ($opacity/100);
 }
 
 body {
-    color: $font-color;
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 18px;
-    background: url(../img/background.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+  color: $font-color;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 18px;
+  background: url(../img/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
 }
 
 a,
 h1,
 h2 {
-    color: $h-color;
+  color: $h-color;
 }
 
 h1,
 h2 {
-    font-family: "Impact", Charcoal, sans-serif;
-    margin: 0px 0px 10px 0px;
-    font-weight: unset;
-    -webkit-font-smoothing: antialiased;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  font-family: "Impact", Charcoal, sans-serif;
+  margin: 0px 0px 10px 0px;
+  font-weight: unset;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
 h1 {
-    border-bottom: 2px solid #eee;
+  border-bottom: 2px solid #eee;
 }
 
 h2 {
-    font-size: 1.5em;
+  font-size: 1.5em;
+}
+
+input[type="text"], input[type="password"] {
+  padding: 2px;
 }
 
 .page {
-    margin: 2em auto;
-    width: 50em;
-    padding: 0.8em;
-    background-color: rgba(255, 255, 255, .7);
+margin: 2em auto;
+width: 50em;
+padding: 0.8em;
+background-color: rgba(255, 255, 255, .7);
+position: relative;
 }
 
 .entries {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    li {
-        margin: 0.8em 1.2em;
-        h2 {
-            margin-left: -1em;
-        }
-    }   
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0.8em 1.2em;
+    h2 {
+      margin-left: -1em;
+    }
+  }   
 }
 
 .add-task {
-    font-size: 0.9em;
-    border-bottom: 1px solid #ccc;
+  font-size: 0.9em;
+  border-bottom: 1px solid #ccc;
 }
 
 .add-task dl {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .metanav {
-    text-align: right;
-    font-size: 0.8em;
-    padding: 0.3em;
-    margin-bottom: 1em;
-    background: #fafafa;
+  text-align: right;
+  font-size: 0.8em;
+  padding: 0.3em;
+  margin-bottom: 1em;
+  background: #fafafa;
 }
 
 .flash {
-    background: #CEE5F5;
-    padding: 0.5em;
+  background: #CEE5F5;
+  padding: 0.5em;
 }
 
 .error {
-    background: #F0D6D6;
-    padding: 0.5em;
+  background: #F0D6D6;
+  padding: 0.5em;
 }
 
 .btn {
-    @include opacity(80);
-    display: inline-block;
-    color: #ffffff;
-    font-size: 1em;
-    padding: 3px 12px;
-    margin: 0;
-    text-decoration: none;
-    position: relative;
-    border: 1px transparent;
-    -webkit-transition: opacity 0.25s;
-    transition: opacity 0.25s;
-    cursor: pointer;
-    &:hover {
-        @include opacity(100);
+  @include opacity(80);
+  display: inline-block;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 3px 12px;
+  margin: 0;
+  text-decoration: none;
+  position: relative;
+  border: 1px transparent;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+  cursor: pointer;
+  &:hover {
+      @include opacity(100);
     }
 }
 
 .btn-normal {
-    background-color: #32A7CA;
+  background-color: #32A7CA;
 }
 
 .btn-delete {
-    background-color: #FC4848;
+  background-color: #FC4848;
 }
 
 .btn-complete {
-    background-color: #43D33D;
+  background-color: #43D33D;
 }
 
 #logout {
-    float: right;
-    margin: 0px;
+  float: right;
+  margin: 0px;
+  font-size: 15px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
 }
