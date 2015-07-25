@@ -32,7 +32,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/srv/python-testing/learning_assignments_2/flasktaskr/flasktaskr"
+set -gx VIRTUAL_ENV "/srv/python-testing-github/python-testing/learning_assignments_2/flasktaskr/flasktaskr"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
